@@ -1,0 +1,298 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+/* =================
+    Typography
+================= */
+h1,
+h2,
+h3 {
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #707070;
+}
+
+a {
+    color: #1a46c0;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: rgb(51, 161, 235);
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* h1 subtitle */
+.subtitle {
+    font-family: 'Lucida Grande';
+    font-size: .75rem;
+    font-weight: 700;
+    color: #1792D2;
+    margin: 0;
+}
+
+.article-title {
+    color: #112699;
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more
+{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #1792D2;
+}
+
+.article-read-more:hover,
+.article-read-more:focus
+{
+    text-decoration: underline;
+    color: #143774;
+}
+
+.article-body-emphasis {
+    font-weight: 700;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+.widget-recent-post-title,
+.widget-title {
+    font-family: 'Lucida Grande';
+    font-size: 1em;
+}
+
+.widget-title{
+    font-weight: 700;
+}
+
+.about-me-h2 {
+    color: #143774;
+}
+
+.about-me-h3 {
+    color: #1792D2; 
+}
+/* =================
+Layout
+================= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*************
+ header ******/
+header {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 2em;
+}
+
+.header-margin{
+    margin: 0;
+}
+
+/*****************
+ navigation ******/
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-top: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7c7070;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+   color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover,
+.current-page:focus {
+    color: #707070;
+}
+
+/* articles */
+.article-featured {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.article-recent-main {
+    order: 3;
+}
+
+.article-recent-secondary {
+    order: 2;
+}
+
+/* widgets */
+.sidebar-widget {
+    border: 1.25em solid #efefef;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-image {
+    order: -1;
+}
+
+.widget-recent-post:last-child{
+    border-bottom: 0;
+    margin-bottom: 0em;
+}
+
+/* footer */
+footer {
+    background:#143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0; 
+}
+
+/* responsive media queries */
+@media (min-width: 675px ) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
+        min-width: 250px;
+        margin-left: 1em;
+    }
+
+    /* navigation */
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav li {
+        margin-top: 0;
+        margin-left: 2em;
+    }
+
+    /* articles */
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+    }
+
+    .article-info {
+        order: -1;
+    }
+}
+
+.reverse-margin{
+    margin-top: -15px;
+}
